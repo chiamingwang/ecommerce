@@ -1,0 +1,17 @@
+h5= description
+    form.mb-5(method="POST", action='/index')
+        br
+        .input
+            span.label(style="margin-right: 10px;") Title:
+            input(type="text", name="title")
+        br
+        .input
+            span.label(style="margin-right: 10px;") Description:
+            input(type="text", name="description")
+        br
+        div.input
+            span.label(style="margin-right: 10px;") Image Upload:
+            input(type="text", name="imageurl", placeholder="Choice Your Product")
+        br
+        div.actions
+            input.btn.btn-warning.text-white(type="submit", value="Submit")

@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h3= title
+    include upload
+  .row
+    each product in products
+     .col-lg-4.mb-5
+       p Title: #{product.title}
+       p Description: #{product.description}
+       p Price: #{product.price}
+       img(src=product.imageurl, width="300")
+  .row
+    each photo in photos
+     .col-lg-4
+       p Title:  #{photo.title}
+       p Description: #{photo.description}
+       img(src=photo.imageurl, width="300")
